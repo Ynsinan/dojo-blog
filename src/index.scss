@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+$defaultColor : #333;
+$primaryColor : #f1356d;
+*{
+    margin: 0;
+    font-family: "Quicksand";
+    color: $defaultColor;
+}
+.navbar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+    h1{
+        color: $primaryColor;
+    }
+    .links{
+        margin-left: auto;
+    }
+    a{
+        margin-left: 16px;
+        text-decoration: none;
+        padding: 6px;
+    }
+    a:hover{
+        color:  $primaryColor;
+    }
+}
+.content{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+        .blog-preview{
+            padding: 10px 16px;
+            margin: 20px 0 ;
+            border-bottom: 1px solid #fafafa;
+            h2{
+                font-size: 20px;
+                color: $primaryColor;
+                margin-bottom: 8px;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        .blog-preview:hover{
+            box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+        }
+}
+
+.blog-details{
+    h2{
+        font-size: 20px;
+        color: $primaryColor;
+        margin-bottom: 10px;
+    }
+    div{
+        margin: 20px 0;
+    }
+    p{
+        font-weight: bold;
+    }
+    button{
+        background: $primaryColor;
+        color: #fff;
+        border: 0;
+        padding: 8px;
+        border-radius: 8px;
+        cursor: pointer;
+
+    }
+}
+
+.create{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    label{
+        text-align: left;
+        display: block;
+    }
+    h2{
+        font-size: 20px;
+        color: $primaryColor;
+        margin-bottom: 30px;
+    }
+    input,textarea,select{
+        width: 100%;
+        padding: 6px 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        display: block;
+    }
+    button{
+        background: $primaryColor;
+        color: #fff;
+        border: 0;
+        padding: 8px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
